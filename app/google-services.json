@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "191186732517",
+    "firebase_url": "https://wheelpressureapp.firebaseio.com",
+    "project_id": "wheelpressureapp",
+    "storage_bucket": "wheelpressureapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191186732517:android:ab1dbc840d12f2be",
+        "android_client_info": {
+          "package_name": "com.example.btest.wheelpressureapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191186732517-17crqe9hq5m4vsjjb0qkpquvbo1jj1da.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.btest.wheelpressureapp",
+            "certificate_hash": "c724d79e4dffc025766bdcfd7b8e540fe19a8833"
+          }
+        },
+        {
+          "client_id": "191186732517-88qldmt1p7a06d37lo9dqacdq82gbbrh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.btest.wheelpressureapp",
+            "certificate_hash": "871ce378896ff5db9ec77effd34eabfbb81d6594"
+          }
+        },
+        {
+          "client_id": "191186732517-fnt3b7mgjlqpa8k16j6lpr00in14i73i.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "191186732517-fnt3b7mgjlqpa8k16j6lpr00in14i73i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF-R5zLRqAeKZnws0UAscJKlPmdq5MV-E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191186732517-fnt3b7mgjlqpa8k16j6lpr00in14i73i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

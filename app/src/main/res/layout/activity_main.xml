@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_phone">
+
+    <ImageView
+        android:id="@+id/carView"
+        android:layout_width="140sp"
+        android:layout_height="260sp"
+        android:layout_centerInParent="true"
+        android:alpha="0.8"
+        android:src="@drawable/car_wb_4" />
+
+    <LinearLayout
+        android:id="@+id/tlLayout"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignBottom="@+id/leftTop"
+        android:layout_alignRight="@+id/leftTop"
+        android:alpha="0.7"
+        android:background="@drawable/circle_designv4"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="40sp"
+                android:layout_height="30sp"
+                android:id="@+id/battery_status"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.2 V"
+                android:id="@+id/voltageTopLeft"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="5sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pressureTopLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="2.6 bar"
+
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/temperatureTopLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/pressureTopLeft"
+            android:layout_gravity="center_horizontal"
+            android:text="30 °C"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/trLayout"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignBottom="@id/rightTop"
+        android:layout_alignLeft="@+id/rightTop"
+        android:alpha="0.7"
+        android:background="@drawable/circle_designv4r"
+        android:gravity="center"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/disconnected1"
+        android:layout_width="65sp"
+        android:layout_height="65sp"
+        android:src="@drawable/disconnected"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/blLayout"
+        android:layout_width="140sp"
+        android:layout_height="140sp"
+        android:layout_alignTop="@+id/leftBottom"
+        android:layout_alignRight="@+id/leftBottom"
+        android:alpha="0.7"
+        android:background="@drawable/circle_designv4"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/disconnected3"
+            android:layout_width="65sp"
+            android:layout_height="65sp"
+            android:src="@drawable/disconnected"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/brLayout"
+        android:layout_width="140sp"
+        android:layout_height="140sp"
+        android:layout_alignTop="@+id/rightBottom"
+        android:layout_alignLeft="@+id/rightBottom"
+        android:alpha="0.7"
+        android:background="@drawable/circle_designv4r"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/disconnected2"
+            android:layout_width="65sp"
+            android:layout_height="65sp"
+            android:src="@drawable/disconnected"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="values"
+        android:visibility="gone" />
+
+    <Switch
+        android:id="@+id/notificationSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginBottom="10sp"
+        android:alpha="0.9"
+        android:text="Notificari"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:theme="@style/AppTheme" />
+
+    <LinearLayout
+        android:id="@+id/leftTop"
+        android:layout_width="30dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/carView"
+        android:layout_alignTop="@+id/carView"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rightTop"
+        android:layout_width="30dp"
+        android:layout_height="80dp"
+        android:layout_alignRight="@+id/carView"
+        android:layout_alignTop="@+id/carView"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/leftBottom"
+        android:layout_width="30dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/carView"
+        android:layout_alignLeft="@+id/carView"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rightBottom"
+        android:layout_width="30dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/carView"
+        android:layout_alignRight="@+id/carView"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TitleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monitorizarea presiunii din pneuri"
+            android:textSize="25sp"
+            android:textStyle="italic"
+            android:textAlignment="center"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+    </LinearLayout>
+
+
+</RelativeLayout>

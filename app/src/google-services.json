@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "191186732517",
+    "firebase_url": "https://wheelpressureapp.firebaseio.com",
+    "project_id": "wheelpressureapp",
+    "storage_bucket": "wheelpressureapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191186732517:android:ab1dbc840d12f2be",
+        "android_client_info": {
+          "package_name": "com.example.btest.wheelpressureapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191186732517-fnt3b7mgjlqpa8k16j6lpr00in14i73i.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "191186732517-fnt3b7mgjlqpa8k16j6lpr00in14i73i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF-R5zLRqAeKZnws0UAscJKlPmdq5MV-E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
